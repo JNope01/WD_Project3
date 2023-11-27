@@ -13,12 +13,12 @@ Background: #FFFFFF
 Icon Coloe: #2D9F63
 
 5-6 pages:
-Home
+Home    - Jeff
 Reviews - Jon
-Contact
-About Us
-Locations
-Training Plans
+Contact Us - Jinya
+About Us   - Jeff
+Locations  - Jinya
+Training Plans - Jon
 
 
 
