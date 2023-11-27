@@ -14,9 +14,11 @@ Icon Coloe: #2D9F63
 
 5-6 pages:
 Home
-contact
-about
-locations
+Reviews - Jon
+Contact
+About Us
+Locations
+Training Plans
 
 
 
