@@ -22,6 +22,7 @@ body {
     background-color: rgb(5, 5, 5) !important; /* Set the background color to black */
     color: white !important; /* Set the text color to white or any other color that contrasts well with black */
     font-family: 'Times New Roman', Times, serif;
+    
 }
 .container {
     text-align: center; /* Center-align the content */
@@ -37,9 +38,8 @@ body {
 .logo {
     margin-right: 10px; /* Adjust the margin between the logo and the heading */
 }
-
-.main-heading {
-    margin: 0; /* Remove default margin for the heading */
+.tips-list {
+    padding-left: 20px; /* Add left padding to create space between the list marker and text */
 }
 
 .rounded-corners {
@@ -55,3 +55,15 @@ body {
     font-weight: normal;
     font-style: normal;
 }
+
+.tips-list li {
+    margin-bottom: 10px; /* Add bottom margin to create space between list items */
+}
+h1{
+    text-align: center;
+}
+.section-text{
+    text-align: center;
+}
+
+
