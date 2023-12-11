@@ -29,10 +29,10 @@ Bootstrap mobile ready function.------------------------------------------------
 Bootstrap alignment for images or text.-----------------------------------------
 Bootstrap pager element to be a secondary navigation throughout the website.----
 JavaScript array.---------------------------------------------------------------
-1 Dialog/pop up box using JavaScript when a button is pressed.------------------
+1 Dialog/pop up box using JavaScript when a button is pressed.------------------Done
 Drop Down menu, links, or buttons should be placed correctly, use html to 
     link to the pages throughout the website. CSS coding for the style of the 
-    navigations/links should be used.-------------------------------------------
+    navigations/links should be used.-------------------------------------------Done
 Main company logo should be linked to the index/home page.
 Include icons for social media pages.-------------------------------------------
 Include a copyright stamp showing company name, date created, and person 
