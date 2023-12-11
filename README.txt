@@ -49,3 +49,24 @@ Research and create an available domain name for the business, please
     include the domain name within the title tags of the html syntax.-----------
 When writing text for the website please use proper English rules, 3 to 5 
     sentences within a paragraph.----------------------------------------------- 
+
+
+
+Training plans:
+
+1.  Survival Basics Bootcamp:
+    Description: A comprehensive introductory course covering the fundamental survival skills necessary to navigate and endure a zombie outbreak. This plan includes hands-on training in basic self-defense techniques, shelter construction, emergency first aid, resource management, and strategic evasion tactics. Participants will gain crucial knowledge on survival mindset and situational awareness.
+
+2.  Advanced Combat Tactics Intensive:
+    Description: An intensive training program designed for individuals seeking advanced combat skills specifically tailored for zombie encounters. This plan focuses on weapon proficiency, close combat techniques, team-based strategies, and scenario-based simulations to effectively neutralize zombies while minimizing risk. Participants will learn tactical maneuvers and defensive strategies essential for combat in chaotic environments.
+
+3.  Outpost Defense and Fortification Workshop:
+    Description: This specialized workshop emphasizes fortification techniques and outpost defense strategies against zombie hordes. Participants will engage in practical sessions covering fortification construction, barrier reinforcement, perimeter security, and tactical positioning. The training includes hands-on exercises in fortifying safe zones and managing defensive structures, preparing individuals to defend against zombie incursions.
+
+4.  Medical Emergency Response for Apocalypse Situations (M.E.R.A.S.):
+    Description: Aimed at medical professionals, first responders, and civilians, this plan focuses on medical emergency response in the context of a zombie outbreak. It covers trauma care, triage methods, infectious disease control, improvised medical supplies, and field surgeries. Participants will practice emergency medical procedures in realistic scenarios to handle injuries and illnesses during apocalyptic situations.
+
+5.  Survivor Community Building and Leadership Development:
+    Description: Geared towards individuals interested in leadership roles and community building during a zombie apocalypse. This program provides guidance on establishing survivor communities, leadership principles, conflict resolution, resource allocation, and ethical decision-making in post-apocalyptic scenarios. Participants will develop skills essential for leading and managing groups in crisis situations.
+
+Each training plan offered by Zombiegeddon Academy caters to different aspects of survival, defense, medical care, leadership, and community-building, ensuring a comprehensive preparation for a fictional zombie apocalypse.

@@ -1,101 +1,142 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Reviews</title>
-        <link rel="stylesheet" href="styles.css">
-        <script src="script.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-        <script>
-            function loadReviews(){
-                const reviews = require('./jsonStorage/reviews.json');
-                var reviews = fetch("./jsonStorage/reviews1.json").then((res) =>{return res.json();}).then((data));
-                const r = JSON.parse(reviews);
 
-                document.getElementById("u1N").innerHTML=r.Reviews1[0].name;
-            }
-            
-            
-        </script>
+<head>
+    <title>Reviews</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const review1 = '{"name" : "Maya Patel","date" : "--July 12, 2022","review" : "Zombiegeddon Academy is an absolute game-changer! Their training programs are comprehensive and immersive, providing a thrilling and realistic experience. I feel more prepared than ever to face any zombie apocalypse scenario."}'
+        const review2 = '{"name" : "Ethan Nguyen","date" : "--June 9, 2022","review" : "I couldn\'t be happier with the training I received at Zombiegeddon Academy. The instructors are highly knowledgeable and create an environment that\'s both educational and incredibly fun. It\'s an adrenaline rush you won\'t forget!"}'
+        const review3 = '{"name" : "Liam Rodriguez","date" : "--May 3, 2022","review" : "Zombiegeddon Academy exceeded my expectations. The attention to detail in their simulations is mind-blowing. I left feeling empowered and confident in my abilities to survive a zombie outbreak."}'
+        const review4 = '{"name" : "Olivia Garcia", "date" : "--April 17, 2022", "review" : "What an adventure! Zombiegeddon Academy offers top-notch training with a perfect blend of excitement and practical skills. It\'s an unforgettable experience that leaves you feeling ready to tackle the undead."}'
+        const review5 = '{"name" : "Ava Smith","date" : "--March 28, 2022","review" : "The dedication of the staff at Zombiegeddon Academy is commendable. They go above and beyond to ensure every participant gains valuable insights and hands-on training. It\'s thrilling and educational at the same time!"}'
 
-    </head>
-    <body>
-        <script>
-            window.onload = loadReviews();
-        </script>
 
-        <!--Reviews By: Jonathan Nope-->
-        <h2 class="d-flex justify-content-center" style="font-family: 'rockSalt'; font-size: 50px; color: var(--tan);">Reviews</h2>
-        
-        <div class="col">
-            <div class="d-flex justify-content-center"><!--Review-->
-                <div class="media border p-3">
-                    <img src="images/avatars/avatar2.JPG" alt="Maya Patel" class="mr-3 mt-3 rounded-circle" style="width:60px;">
-                    <div class="media-body">
-                        <h4 id="u1N"><small><i>--July 12, 2022</i></small></h4>
-                        <p>""</p>
-                    </div>
+        function loadReviews() {
+            load1();
+            load2();
+            load3();
+            load4();
+            load5();
+        }
+
+        function load1() {
+            const printReview = JSON.parse(review1);
+            document.getElementById("user1N").innerHTML = printReview.name;
+            document.getElementById("user1D").innerHTML = printReview.date;
+            document.getElementById("user1R").innerHTML = printReview.review;
+        }
+
+        function load2() {
+            const printReview = JSON.parse(review2);
+            document.getElementById("user2N").innerHTML = printReview.name;
+            document.getElementById("user2D").innerHTML = printReview.date;
+            document.getElementById("user2R").innerHTML = printReview.review;
+        }
+
+        function load3() {
+            const printReview = JSON.parse(review3);
+            document.getElementById("user3N").innerHTML = printReview.name;
+            document.getElementById("user3D").innerHTML = printReview.date;
+            document.getElementById("user3R").innerHTML = printReview.review;
+        }
+
+        function load4() {
+            const printReview = JSON.parse(review4);
+            document.getElementById("user4N").innerHTML = printReview.name;
+            document.getElementById("user4D").innerHTML = printReview.date;
+            document.getElementById("user4R").innerHTML = printReview.review;
+        }
+
+        function load5() {
+            const printReview = JSON.parse(review5);
+            document.getElementById("user5N").innerHTML = printReview.name;
+            document.getElementById("user5D").innerHTML = printReview.date;
+            document.getElementById("user5R").innerHTML = printReview.review;
+        }
+
+    </script>
+
+</head>
+
+<body onload="loadReviews()">
+    <!--Reviews By: Jonathan Nope-->
+    <h2 class="d-flex justify-content-center" style="font-family: 'rockSalt'; font-size: 50px; color: var(--tan);">
+        Reviews</h2>
+
+    <div class="col">
+        <div class="d-flex justify-content-center"><!--Review-->
+            <div class="media border p-3">
+                <img src="images/avatars/avatar2.JPG" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+                <div class="media-body">
+                    <h4><span id="user1N"></span><small><i id="user1D"></i></small></h4>
+                    <p id="user1R">""</p>
                 </div>
-            </div><!--Review-->
+            </div>
+        </div><!--Review-->
 
-            <div class="d-flex justify-content-center"><!--Review-->
-                <div class="media border p-3">
-                    <img src="images/avatars/avatar3.JPG" alt="Ethan Nguyen" class="mr-3 mt-3 rounded-circle" style="width:60px;">
-                    <div class="media-body">
-                        <h4>Ethan Nguyen<small><i>--June 9, 2022</i></small></h4>
-                        <p>""</p>
-                    </div>
+        <div class="d-flex justify-content-center"><!--Review-->
+            <div class="media border p-3">
+                <img src="images/avatars/avatar3.JPG" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+                <div class="media-body">
+                    <h4><span id="user2N"></span><small><i id="user2D"></i></small></h4>
+                    <p id="user2R">""</p>
                 </div>
-            </div><!--Review-->
+            </div>
+        </div><!--Review-->
 
-            <div class="d-flex justify-content-center"><!--Review-->
-                <div class="media border p-3">
-                    <img src="images/avatars/avatar1.JPG" alt="Liam Rodriguez" class="mr-3 mt-3 rounded-circle" style="width:60px;">
-                    <div class="media-body">
-                        <h4>Liam Rodriguez<small><i>--May 3, 2022</i></small></h4>
-                        <p>""</p>
-                    </div>
+        <div class="d-flex justify-content-center"><!--Review-->
+            <div class="media border p-3">
+                <img src="images/avatars/avatar1.JPG" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+                <div class="media-body">
+                    <h4><span id="user3N"></span><small><i id="user3D"></i></small></h4>
+                    <p id="user3R">""</p>
                 </div>
-            </div><!--Review-->
-            
-            <div class="d-flex justify-content-center"><!--Review-->
-                <div class="media border p-3">
-                    <img src="images/avatars/avatar2.JPG" alt="Olivia Garcia" class="mr-3 mt-3 rounded-circle" style="width:60px;">
-                    <div class="media-body">
-                        <h4>Olivia Garcia<small><i>--April 17, 2022</i></small></h4>
-                        <p>""</p>
-                    </div>
+            </div>
+        </div><!--Review-->
+
+        <div class="d-flex justify-content-center"><!--Review-->
+            <div class="media border p-3">
+                <img src="images/avatars/avatar2.JPG" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+                <div class="media-body">
+                    <h4><span id="user4N"></span><small><i id="user4D"></i></small></h4>
+                    <p id="user4R">""</p>
                 </div>
-            </div><!--Review-->
-            
-            <div class="d-flex justify-content-center"><!--Review-->
-                <div class="media border p-3">
-                    <img src="images/avatars/avatar5.JPG" alt="Ava Smith" class="mr-3 mt-3 rounded-circle" style="width:60px;">
-                    <div class="media-body">
-                        <h4>Ava Smith<small><i>--March 28, 2022</i></small></h4>
-                        <p>""</p>
-                    </div>
+            </div>
+        </div><!--Review-->
+
+        <div class="d-flex justify-content-center"><!--Review-->
+            <div class="media border p-3">
+                <img src="images/avatars/avatar5.JPG" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+                <div class="media-body">
+                    <h4><span id="user5N"></span><small><i id="user5D"></i></small></h4>
+                    <p id="user5R">""</p>
                 </div>
-            </div><!--Review-->
+            </div>
+        </div><!--Review-->
 
 
 
-        </div><!--col-->
+    </div><!--col-->
 
-        <div><!--Pagination-->
-            <ul class="pagination pagination-lg d-flex justify-content-center">
-                <li class="active"><a href="reviews1.html">1</a></li>
-                <li><a href="reviews2.html">2</a></li>  
-            </ul>
-        </div><!--Pagination-->
-
-
+    <div><!--Pagination-->
+        <ul class="pagination pagination-lg d-flex justify-content-center">
+            <li class="active"><a href="reviews1.html">1</a></li>
+            <li><a href="reviews2.html">2</a></li>
+        </ul>
+    </div><!--Pagination-->
 
 
-    </body>
+
+
+</body>
+
 </html>
