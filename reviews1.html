@@ -14,10 +14,10 @@
         <script>
             function loadReviews(){
                 const reviews = require('./jsonStorage/reviews.json');
+                var reviews = fetch("./jsonStorage/reviews1.json").then((res) =>{return res.json();}).then((data));
                 const r = JSON.parse(reviews);
 
-                var reviews = fetch("./jsonStorage/reviews1.json").then((res) =>{return res.json();}).then((data));
-                document.getElementById("u1N").innerHTML=r.uID1[0];
+                document.getElementById("u1N").innerHTML=r.Reviews1[0].name;
             }
             
             
