@@ -22,8 +22,8 @@ Training Plans  - Jon
 
 Requirements:
 Basic HTML page syntax----------------------------------------------------------Done
-Include Cascading Style Sheet (embedded or externally linked).------------------
-Include JavaScript page ready function.-----------------------------------------
+Include Cascading Style Sheet (embedded or externally linked).------------------Done
+Include JavaScript page ready function.-----------------------------------------Done
 Use a jQuery CDN library link so the jQuery functions work properly.------------
 Bootstrap mobile ready function.------------------------------------------------Done
 Bootstrap alignment for images or text.-----------------------------------------
