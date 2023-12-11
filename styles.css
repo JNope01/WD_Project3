@@ -1,3 +1,24 @@
-:root{
+.instructor-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.round-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px; /* Creates a round shape */
+    text-decoration: none; /* Removes the underline for anchor tags */
+    text-align: center;
+    background-color: #007BFF; /* Choose your preferred background color */
+    color: #FFFFFF; /* Choose your preferred text color */
+    margin: 30px;
     
+}
+.round-button:hover {
+    background-color: #00050a; /* Change color on hover */
+}
+body {
+    background-color: rgb(5, 5, 5); /* Set the background color to black */
+    color: white; /* Set the text color to white or any other color that contrasts well with black */
 }
