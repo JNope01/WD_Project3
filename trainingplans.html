@@ -11,41 +11,92 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        const plan1 = '{"name" : "Survival Basics Bootcamp:", "date" : "", "description" : "A comprehensive introductory course covering the fundamental survival skills necessary to navigate and endure a zombie outbreak. This plan includes hands-on training in basic self-defense techniques, shelter construction, emergency first aid, resource management, and strategic evasion tactics. Participants will gain crucial knowledge on survival mindset and situational awareness."}'
 
-        function loadPlans() {
-            load1();
-            load2();
-            load3();
-            load4();
-            load5();
-        }
-
-        function load1() {
-            const printReview = JSON.parse(review1);
-            document.getElementById("plan1").innerHTML = printReview.name;
-            document.getElementById("price1").innerHTML = printReview.price;
-            document.getElementById("d1").innerHTML = printReview.description;
-        }
-
-    </script>
 </head>
 
 <body>
     <h2 class="d-flex justify-content-center">Training Plans</h2>
 
 
-    <div class="col">
-        <div class="d-flex justify-content-center" style="height:200px ;width:75%; object-fit:cover; background: url('images/tP/sB.jpg')"><!--Review-->
+    <div class="col" style=" margin-left: 10%; margin-right: 10%;">
+        <div class="d-flex justify-content-center" style=" width: 75%;background: url('images/tP/sB.jpg')"><!--Review-->
             <div class="media border p-3" >
                 <div class="media-body">
-                    <h1><span id="plan1" style="color: #fefefe;">Hello World</span><small><i id="price1"></i></small></h4>
-                    <p id="d1"></p>
+                    <h1>
+                        <span  style="color: #fefefe; text-shadow: #0e0d0d 1px 0 10px;">Survival Basics Bootcamp:</span>
+                        <span class="d-flex justify-content-end" style="color: #fefefe; text-shadow: #0e0d0d 1px 0 10px;">$49.99</span>
+                    </h1>
+                    <p style="color: #fefefe; text-shadow: #0e0d0d 1px 0 10px; margin-right: 10%;">
+                        Description: A comprehensive introductory course covering the fundamental survival skills necessary to navigate 
+                        and endure a zombie outbreak. This plan includes hands-on training in basic self-defense techniques, shelter 
+                        construction, emergency first aid, resource management, and strategic evasion tactics. Participants will gain 
+                        crucial knowledge on survival mindset and situational awareness.
+                    </p>
                 </div>
             </div>
         </div><!--Review-->
-
+        <br>
+        <div class="d-flex justify-content-center" style=" width: 75%;background: url('images/tP/sB.jpg')"><!--Review-->
+            <div class="media border p-3" >
+                <div class="media-body">
+                    <h1>
+                        <span  style="color: #fefefe; text-shadow: #0e0d0d 1px 0 10px;">Advanced Combat Tactics Intensive:</span>
+                        <span class="d-flex justify-content-end" style="color: #fefefe; text-shadow: #0e0d0d 1px 0 10px;">$49.99</span>
+                    </h1>
+                    <p style="color: #fefefe; text-shadow: #0e0d0d 1px 0 10px; margin-right: 10%;">
+                        Description: An intensive training program designed for individuals seeking advanced combat skills specifically tailored 
+                        for zombie encounters. This plan focuses on weapon proficiency, close combat techniques, team-based strategies, and 
+                        scenario-based simulations to effectively neutralize zombies while minimizing risk. Participants will learn tactical 
+                        maneuvers and defensive strategies essential for combat in chaotic environments.
+                    </p>
+                </div>
+            </div>
+        </div><!--Review-->
+        <br>
+        <div class="d-flex justify-content-center" style=" width: 75%;background: url('images/tP/sB.jpg')"><!--Review-->
+            <div class="media border p-3" >
+                <div class="media-body">
+                    <h1>
+                        <span  style="color: #fefefe; text-shadow: #0e0d0d 1px 0 10px;">Outpost Defense and Fortification Workshop:</span>
+                        <span class="d-flex justify-content-end" style="color: #fefefe; text-shadow: #0e0d0d 1px 0 10px;">$99.99</span>
+                    </h1>
+                    <p style="color: #fefefe; text-shadow: #0e0d0d 1px 0 10px; margin-right: 10%;">
+                        Description: <br>This specialized workshop emphasizes fortification techniques and outpost defense strategies against 
+                        zombie hordes. Participants will engage in practical sessions covering fortification construction, barrier 
+                        reinforcement, perimeter security, and tactical positioning. The training includes hands-on exercises in fortifying 
+                        safe zones and managing defensive structures, preparing individuals to defend against zombie incursions.
+                    </p>
+                </div>
+            </div>
+        </div><!--Review-->
+        <br>
+        <div class="d-flex justify-content-center" style=" width: 75%;background: url('images/tP/sB.jpg')"><!--Review-->
+            <div class="media border p-3" >
+                <div class="media-body">
+                    <h1>
+                        <span  style="color: #fefefe; text-shadow: #0e0d0d 1px 0 10px;"></span>
+                        <span class="d-flex justify-content-end" style="color: #fefefe; text-shadow: #0e0d0d 1px 0 10px;"></span>
+                    </h1>
+                    <p style="color: #fefefe; text-shadow: #0e0d0d 1px 0 10px; margin-right: 10%;">
+                    
+                    </p>
+                </div>
+            </div>
+        </div><!--Review-->
+        <br>
+        <div class="d-flex justify-content-center" style=" width: 75%;background: url('images/tP/sB.jpg')"><!--Review-->
+            <div class="media border p-3" >
+                <div class="media-body">
+                    <h1>
+                        <span  style="color: #fefefe; text-shadow: #0e0d0d 1px 0 10px;"></span>
+                        <span class="d-flex justify-content-end" style="color: #fefefe; text-shadow: #0e0d0d 1px 0 10px;"></span>
+                    </h1>
+                    <p style="color: #fefefe; text-shadow: #0e0d0d 1px 0 10px; margin-right: 10%;">
+                        
+                    </p>
+                </div>
+            </div>
+        </div><!--Review-->
     </div><!--col-->
 
 </body>

@@ -13,12 +13,12 @@ Background: #FFFFFF
 Icon Coloe: #2D9F63
 
 5-6 pages:
-Home    - Jeff
-Reviews - Jon
-Contact Us - Jinya
-About Us   - Jeff
-Locations  - Jinya
-Training Plans - Jon
+Home            - Jeff
+Reviews         - Jon
+Contact Us      - Jinya
+About Us        - Jeff
+Locations       - Jinya
+Training Plans  - Jon
 
 Requirements:
 Basic HTML page syntax----------------------------------------------------------Done
