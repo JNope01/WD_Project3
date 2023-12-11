@@ -19,6 +19,25 @@
     background-color: #00050a; /* Change color on hover */
 }
 body {
-    background-color: rgb(5, 5, 5); /* Set the background color to black */
-    color: white; /* Set the text color to white or any other color that contrasts well with black */
+    background-color: rgb(5, 5, 5) !important; /* Set the background color to black */
+    color: white !important; /* Set the text color to white or any other color that contrasts well with black */
+    font-family: 'Times New Roman', Times, serif;
+}
+.container {
+    text-align: center; /* Center-align the content */
+}
+
+.header {
+    display: flex; /* Use flexbox for better alignment */
+    align-items: center; /* Align items vertically in the center */
+    justify-content: space-between; /* Center-align the items horizontally */
+    margin-bottom: 20px; /* Add margin for spacing */
+}
+
+.logo {
+    margin-right: 10px; /* Adjust the margin between the logo and the heading */
+}
+
+.main-heading {
+    margin: 0; /* Remove default margin for the heading */
 }
