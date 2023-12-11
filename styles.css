@@ -41,3 +41,17 @@ body {
 .main-heading {
     margin: 0; /* Remove default margin for the heading */
 }
+
+.rounded-corners {
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
+}
+
+@font-face {
+    font-family: '1942';
+    src: url('fonts/1942-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

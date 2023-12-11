@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
-
+<!--Main Contributor: Jonathan -->
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reviews</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
@@ -12,6 +14,9 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script>
         const review1 = '{"name" : "Maya Patel","date" : "--July 12, 2022","review" : "Zombiegeddon Academy is an absolute game-changer! Their training programs are comprehensive and immersive, providing a thrilling and realistic experience. I feel more prepared than ever to face any zombie apocalypse scenario."}'
         const review2 = '{"name" : "Ethan Nguyen","date" : "--June 9, 2022","review" : "I couldn\'t be happier with the training I received at Zombiegeddon Academy. The instructors are highly knowledgeable and create an environment that\'s both educational and incredibly fun. It\'s an adrenaline rush you won\'t forget!"}'
@@ -68,11 +73,39 @@
 </head>
 
 <body onload="loadReviews()">
+
+    <nav class="navbar navbar-expand-lg py-3 navbar-background" style="background-color: white;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo3.png" width="200px" class="align-middle me-1 " alt="My Website">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar"
+                aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <div lc-helper="shortcode" class="ms-auto">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0 navbar-nav">
+                        <li class="nav-item"><a href="index.html" class="nav-link fs-4">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link fs-4">About Us</a></li>
+                        <li class="nav-item"><a href="trainingplans.html" class="nav-link fs-4">Training Plans</a></li>
+                        <li class="nav-item"><a href="reviews1.html" class="nav-link fs-4">Reviews</a></li>
+                        <li class="nav-item"><a href="locations.html" class="nav-link fs-4">Location</a></li>
+                        <li class="nav-item"><a href="contactUs.html" class="nav-link fs-4">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
     <!--Reviews By: Jonathan Nope-->
-    <h2 class="d-flex justify-content-center" style="font-family: 'rockSalt'; font-size: 50px; color: var(--tan);">
+    <h2 class="d-flex justify-content-center" style="font-family: '1942'; font-size: 50px;">
         Reviews</h2>
 
-    <div class="col">
+    <div class="col" >
         <div class="d-flex justify-content-center"><!--Review-->
             <div class="media border p-3">
                 <img src="images/avatars/avatar2.JPG" class="mr-3 mt-3 rounded-circle" style="width:60px;">
@@ -134,9 +167,15 @@
         </ul>
     </div><!--Pagination-->
 
-
-
-
+    <br>
+    <br>
+    <footer class="navbar-background" style="background-color: #fbf7f4;">
+        <img src="images/CopyRight.png" width="100px" class="align-middle mx-auto d-block" alt="My Website">
+        <p class="text-center" style="color: black; background-color: white;">&copy 2023 | Group 5 - CS 220</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
