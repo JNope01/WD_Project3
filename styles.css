@@ -49,12 +49,6 @@ body {
     border-radius: 20px;
 }
 
-@font-face {
-    font-family: '1942';
-    src: url('fonts/1942-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 
 .tips-list li {
     margin-bottom: 10px; /* Add bottom margin to create space between list items */
@@ -67,3 +61,11 @@ h1{
 }
 
 
+/* Fonts */
+
+@font-face {
+    font-family: '1942';
+    src: url('fonts/1942-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
