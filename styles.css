@@ -69,6 +69,21 @@ body {
     margin-bottom: 10px; /* Add bottom margin to create space between list items */
     counter-increment: tip-counter; /* Increment the counter for each list item */
 }
+/* Add this to your CSS to style the slider */
+.slider-container {
+    max-width: 800px; /* Adjust the maximum width of the slider container */
+    margin: 0 auto; /* Center the slider container */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.slider {
+    display: flex; /* Display slides in a row */
+    transition: transform 0.5s ease-in-out; /* Smooth transition effect */
+}
+
+.slide {
+    min-width: 100%; /* Each slide takes the full width of the container */
+}
 
 
 

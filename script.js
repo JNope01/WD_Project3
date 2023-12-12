@@ -16,4 +16,37 @@
                 );
             });
         });
-        
+        // Add this to your JavaScript file
+const slider = document.getElementById("slider");
+const slides = [
+    "path/to/image1.jpg",
+    "path/to/image2.jpg",
+    "path/to/image3.jpg",
+    // Add more image paths as needed
+];
+let currentSlide = 0;
+
+function showSlides() {
+    slider.style.transform = `translateX(${-currentSlide * 100}%)`;
+}
+
+function nextSlide() {
+    if (currentSlide < slides.length - 1) {
+        currentSlide++;
+    } else {
+        currentSlide = 0;
+    }
+    showSlides();
+}
+
+function prevSlide() {
+    if (currentSlide > 0) {
+        currentSlide--;
+    } else {
+        currentSlide = slides.length - 1;
+    }
+    showSlides();
+}
+
+// Display the initial set of slides
+showSlides();
