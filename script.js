@@ -1,5 +1,5 @@
  function showInstructorDialog(Jeff) {
-            alert("You clicked on " + Jeff + "'s button!")
+            alert("Good Choice!")
             // You can replace the alert with your own custom dialog implementation
         }
         $(document).ready(function () {

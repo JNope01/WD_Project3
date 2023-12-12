@@ -1,8 +1,14 @@
+.main-heading{
+    margin: 0;
+}
 .instructor-container {
     display: flex;
     align-items: center;
     justify-content: center;
    
+}
+.text-center{
+    text-align: center;
 }
 .round-button {
     display: inline-block;
@@ -24,22 +30,19 @@ body {
     font-family: 'Times New Roman', Times, serif;
     
 }
-.container {
-    text-align: center; /* Center-align the content */
-}
-
 .header {
-    display: flex; /* Use flexbox for better alignment */
-    align-items: center; /* Align items vertically in the center */
-    justify-content: space-between; /* Center-align the items horizontally */
-    margin-bottom: 20px; /* Add margin for spacing */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .logo {
     margin-right: 10px; /* Adjust the margin between the logo and the heading */
 }
-.tips-list {
-    padding-left: 20px; /* Add left padding to create space between the list marker and text */
+.logo-container {
+    display: flex;
+    align-items: center;
 }
 
 .rounded-corners {
@@ -49,23 +52,41 @@ body {
     border-radius: 20px;
 }
 
+.section-text-tip{
+    text-align: center;
+    font-size: medium;
+    color:#007BFF;
 
-.tips-list li {
+}
+.numbered-tips-list {
+    padding-left: 0; /* Remove default padding for the ordered list */
+    list-style-position: inside; /* Position the list markers inside the list items */
+    counter-reset: tip-counter; /* Reset the counter for numbered list */
+}
+
+.numbered-tips-list li {
+    text-align: center; /* Align the text to the left within list items */
     margin-bottom: 10px; /* Add bottom margin to create space between list items */
-}
-h1{
-    text-align: center;
-}
-.section-text{
-    text-align: center;
+    counter-increment: tip-counter; /* Increment the counter for each list item */
 }
 
 
-/* Fonts */
 
-@font-face {
-    font-family: '1942';
-    src: url('fonts/1942-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+
+.section-heading{
+        text-align: center;
+    }
+    .section-text{
+        text-align: center;
+    }
+    
+    
+    /* Fonts */
+    
+    @font-face {
+        font-family: '1942';
+        src: url('fonts/1942-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
