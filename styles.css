@@ -125,6 +125,7 @@ body {
     }
     .section-text{
         text-align: center;
+        
     }
 
     * {box-sizing: border-box;}
@@ -179,6 +180,10 @@ img {vertical-align: middle;}
 .fade {
   animation-name: fade;
   animation-duration: 5s;
+}
+.instructor-info{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 @keyframes fade {
