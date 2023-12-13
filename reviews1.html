@@ -18,13 +18,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script>
+        // JSON Review Storage
+        // Jonathan
         const review1 = '{"name" : "Maya Patel","date" : "--July 12, 2022","review" : "Zombiegeddon Academy is an absolute game-changer! Their training programs are comprehensive and immersive, providing a thrilling and realistic experience. I feel more prepared than ever to face any zombie apocalypse scenario."}'
         const review2 = '{"name" : "Ethan Nguyen","date" : "--June 9, 2022","review" : "I couldn\'t be happier with the training I received at Zombiegeddon Academy. The instructors are highly knowledgeable and create an environment that\'s both educational and incredibly fun. It\'s an adrenaline rush you won\'t forget!"}'
         const review3 = '{"name" : "Liam Rodriguez","date" : "--May 3, 2022","review" : "Zombiegeddon Academy exceeded my expectations. The attention to detail in their simulations is mind-blowing. I left feeling empowered and confident in my abilities to survive a zombie outbreak."}'
         const review4 = '{"name" : "Olivia Garcia", "date" : "--April 17, 2022", "review" : "What an adventure! Zombiegeddon Academy offers top-notch training with a perfect blend of excitement and practical skills. It\'s an unforgettable experience that leaves you feeling ready to tackle the undead."}'
         const review5 = '{"name" : "Ava Smith","date" : "--March 28, 2022","review" : "The dedication of the staff at Zombiegeddon Academy is commendable. They go above and beyond to ensure every participant gains valuable insights and hands-on training. It\'s thrilling and educational at the same time!"}'
 
-
+        // Loads Reviews into the Webpage
+        // Jonathan
         function loadReviews() {
             load1();
             load2();
@@ -33,6 +36,8 @@
             load5();
         }
 
+        // Loads JSON Arrays into the review 1 DIVs
+        // Jonathan
         function load1() {
             const printReview = JSON.parse(review1);
             document.getElementById("user1N").innerHTML = printReview.name;
@@ -40,6 +45,8 @@
             document.getElementById("user1R").innerHTML = printReview.review;
         }
 
+        // Loads JSON Arrays into the review 2 DIVs
+        // Jonathan
         function load2() {
             const printReview = JSON.parse(review2);
             document.getElementById("user2N").innerHTML = printReview.name;
@@ -47,6 +54,8 @@
             document.getElementById("user2R").innerHTML = printReview.review;
         }
 
+        // Loads JSON Arrays into the review 3 DIVs
+        // Jonathan
         function load3() {
             const printReview = JSON.parse(review3);
             document.getElementById("user3N").innerHTML = printReview.name;
@@ -54,6 +63,8 @@
             document.getElementById("user3R").innerHTML = printReview.review;
         }
 
+        // Loads JSON Arrays into the review 4 DIVs
+        // Jonathan
         function load4() {
             const printReview = JSON.parse(review4);
             document.getElementById("user4N").innerHTML = printReview.name;
@@ -61,6 +72,8 @@
             document.getElementById("user4R").innerHTML = printReview.review;
         }
 
+        // Loads JSON Arrays into the review 5 DIVs
+        // Jonathan
         function load5() {
             const printReview = JSON.parse(review5);
             document.getElementById("user5N").innerHTML = printReview.name;
@@ -73,7 +86,7 @@
 </head>
 
 <body onload="loadReviews()">
-
+    <!--Nav Bar: Jinya-->
     <nav class="navbar navbar-expand-lg py-3 navbar-background" style="background-color: white;">
         <div class="container">
             <a class="navbar-brand" href="index.html">
@@ -155,18 +168,16 @@
                 </div>
             </div>
         </div><!--Review-->
-
-
-
     </div><!--col-->
 
-    <div><!--Pagination-->
+    <div><!--Pagination By: Jonathan-->
         <ul class="pagination pagination-lg d-flex justify-content-center">
             <li class="active"><a href="reviews1.html">1</a></li>
             <li><a href="reviews2.html">2</a></li>
         </ul>
     </div><!--Pagination-->
 
+    <!--Footer-->
     <br>
     <br>
     <footer class="navbar-background" style="background-color: #fbf7f4;">
