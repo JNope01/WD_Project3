@@ -64,7 +64,6 @@ nav a {
     justify-content: center;
    
 }
-
 .text-center{
     text-align: center !important;
     margin-top: -28px;
@@ -184,6 +183,12 @@ img {vertical-align: middle;}
 .instructor-info{
     font-size: large;
     font-family: 'Times New Roman', Times, serif;
+   
+}
+.instructor-container{
+    display: flex;
+    text-align: left;
+    justify-content: center;
 }
 
 @keyframes fade {
