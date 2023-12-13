@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <!--Main Contributor: Jonathan -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,13 +19,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script>
+        // JSON Review Storage
+        // Jonathan
         const review2 = '{"name" : "Lucas Brown", "date" : "--November 1, 2021", "review" : "Zombiegeddon Academy is the ultimate place to prepare for the unexpected. The courses are well-structured and cover a wide range of survival techniques. I\'m grateful for the knowledge I gained here!"}'
         const review3 = '{"name" : "Mia Thompson", "date" : "--October 5, 2021", "review" : "I can\'t recommend Zombiegeddon Academy enough! The atmosphere is electric, and the team\'s passion for what they do shines through in every aspect of their training. It\'s an experience that\'s both practical and exhilarating."}'
         const review4 = '{"name" : "Oliver Davis", "date" : "--September 20, 2021", "review" : "Attending Zombiegeddon Academy was an unforgettable experience. The staff\'s expertise and commitment to safety make the training sessions intense yet safe. I feel more equipped to handle any zombie apocalypse scenario."}'
         const review1 = '{"name" : "Noah Johnson", "date" : "--February 14, 2022", "review" : "Zombiegeddon Academy is a one-of-a-kind institution. The authenticity of their simulations and the dedication of the instructors create an environment that\'s both thrilling and educational. It\'s an absolute blast!"}'
         const review5 = '{"name" : "Sophia Martinez", "date" : "--December 8, 2021", "review" : "If you\'re looking for an adventure while learning life-saving skills, Zombiegeddon Academy is the place to be. The training is hands-on, informative, and a ton of fun. I left feeling empowered and ready for anything!"}'
 
-
+        // Loads Reviews into the Webpage
+        // Jonathan
         function loadReviews() {
             load1();
             load2();
@@ -33,6 +37,8 @@
             load5();
         }
 
+        // Loads JSON Arrays into the review 1 DIVs
+        // Jonathan
         function load1() {
             const printReview = JSON.parse(review1);
             document.getElementById("user1N").innerHTML = printReview.name;
@@ -40,6 +46,8 @@
             document.getElementById("user1R").innerHTML = printReview.review;
         }
 
+        // Loads JSON Arrays into the review 2 DIVs
+        // Jonathan
         function load2() {
             const printReview = JSON.parse(review2);
             document.getElementById("user2N").innerHTML = printReview.name;
@@ -47,6 +55,8 @@
             document.getElementById("user2R").innerHTML = printReview.review;
         }
 
+        // Loads JSON Arrays into the review 3 DIVs
+        // Jonathan
         function load3() {
             const printReview = JSON.parse(review3);
             document.getElementById("user3N").innerHTML = printReview.name;
@@ -54,6 +64,8 @@
             document.getElementById("user3R").innerHTML = printReview.review;
         }
 
+        // Loads JSON Arrays into the review 4 DIVs
+        // Jonathan
         function load4() {
             const printReview = JSON.parse(review4);
             document.getElementById("user4N").innerHTML = printReview.name;
@@ -61,6 +73,8 @@
             document.getElementById("user4R").innerHTML = printReview.review;
         }
 
+        // Loads JSON Arrays into the review 5 DIVs
+        // Jonathan
         function load5() {
             const printReview = JSON.parse(review5);
             document.getElementById("user5N").innerHTML = printReview.name;
@@ -73,6 +87,7 @@
 </head>
 
 <body onload="loadReviews()">
+    <!--Nav Bar: Jinya-->
     <nav class="navbar navbar-expand-lg py-3 navbar-background" style="background-color: white;">
         <div class="container">
             <a class="navbar-brand" href="index.html">
@@ -98,8 +113,6 @@
             </div>
         </div>
     </nav>
-
-
 
     <!--Reviews By: Jonathan Nope-->
     <h2 class="d-flex justify-content-center" style="font-family: '1942'; font-size: 50px;">
@@ -155,21 +168,21 @@
                 </div>
             </div>
         </div><!--Review-->
-
     </div><!--col-->
 
-
-    <div><!--Pagination-->
+    <div><!--Pagination By: Jonathan-->
         <ul class="pagination pagination-lg d-flex justify-content-center">
             <li><a href="reviews1.html">1</a></li>
             <li class="active"><a href="reviews2.html">2</a></li>
         </ul>
     </div><!--Pagination-->
+
+    <!--Footer-->
     <br>
     <br>
     <footer class="navbar-background" style="background-color: #fbf7f4;">
         <img src="images/CopyRight.png" width="100px" class="align-middle mx-auto d-block" alt="My Website">
-        <p class="text-center" style="color: black; background-color: white;">&copy 2023 | Group 5 - CS 220</p>
+        <p class="text-center" style="color: black; background-color: #fbf7f4;">&copy 2023 | Group 5 - CS 220</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
