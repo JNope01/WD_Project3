@@ -16,37 +16,23 @@
                 );
             });
         });
-        // Add this to your JavaScript file
-const slider = document.getElementById("slider");
-const slides = [
-    "path/to/image1.jpg",
-    "path/to/image2.jpg",
-    "path/to/image3.jpg",
-    // Add more image paths as needed
-];
-let currentSlide = 0;
+       
+let slideIndex = 0;
+showSlides();
 
 function showSlides() {
-    slider.style.transform = `translateX(${-currentSlide * 100}%)`;
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
-
-function nextSlide() {
-    if (currentSlide < slides.length - 1) {
-        currentSlide++;
-    } else {
-        currentSlide = 0;
-    }
-    showSlides();
-}
-
-function prevSlide() {
-    if (currentSlide > 0) {
-        currentSlide--;
-    } else {
-        currentSlide = slides.length - 1;
-    }
-    showSlides();
-}
-
-// Display the initial set of slides
-showSlides();
