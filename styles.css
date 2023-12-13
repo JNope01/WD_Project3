@@ -7,8 +7,9 @@
     justify-content: center;
    
 }
+
 .text-center{
-    text-align: center;
+    text-align: center !important;
 }
 .round-button {
     display: inline-block;
@@ -37,13 +38,6 @@ body {
     margin-bottom: 20px;
 }
 
-.logo {
-    margin-right: 10px; /* Adjust the margin between the logo and the heading */
-}
-.logo-container {
-    display: flex;
-    align-items: center;
-}
 
 .rounded-corners {
     -moz-border-radius: 20px;
