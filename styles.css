@@ -31,13 +31,6 @@ body {
     font-family: 'Times New Roman', Times, serif;
     
 }
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
 
 .rounded-corners {
     -moz-border-radius: 20px;
