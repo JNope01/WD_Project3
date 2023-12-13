@@ -11,6 +11,53 @@
 nav a {
     margin-right: 45px; /* Adjust the margin as needed to control the space between links */
 }
+.fa {
+    padding: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 10px;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+.social-icons-container{
+    margin-left: 1000px;
+    margin-top: -80px;
+}
+.fa-facebook{
+    
+    background: #070707;
+    color: white;
+}
+.fa-twitter{
+    
+    background: #080808;
+    color: white;
+}
+.fa-instagram{
+    
+    background: #050505; 
+    color: white;
+}
+.fa-youtube{
+    
+    background: #050505; 
+    color: white;
+}
+.fa-linkedin{
+    
+    background: #050505; 
+    color: white;
+}
+.fa-pinterest{
+    
+    background: #050505; 
+    color: white;
+}
 .instructor-container {
     display: flex;
     align-items: center;
@@ -40,7 +87,7 @@ nav a {
 }
 body {
     background-color: rgb(5, 5, 5) !important; /* Set the background color to black */
-    color: white !important; /* Set the text color to white or any other color that contrasts well with black */
+    color: gray !important; /* Set the text color to white or any other color that contrasts well with black */
     font-family: 'Times New Roman', Times, serif;
     
 }
@@ -55,7 +102,7 @@ body {
 .section-text-tip{
     text-align: center;
     font-size: medium;
-    color:#007BFF;
+    color:red;
 
 }
 .numbered-tips-list {
@@ -73,6 +120,8 @@ body {
 
 .section-heading{
         text-align: center;
+        font-family: '1942';
+        Color: white;
     }
     .section-text{
         text-align: center;
