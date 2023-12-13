@@ -121,6 +121,7 @@ body {
         text-align: center;
         font-family: '1942';
         Color: white;
+        margin-bottom: 100px;
     }
     .section-text{
         text-align: center;
@@ -183,12 +184,18 @@ img {vertical-align: middle;}
 .instructor-info{
     font-size: large;
     font-family: 'Times New Roman', Times, serif;
-   
+    margin-top: 10px;
 }
 .instructor-container{
     display: flex;
-    text-align: left;
-    justify-content: center;
+    justify-content: space-around; /* Adjust as needed */
+    align-items: center;
+    flex-wrap: wrap; /* This allows items to wrap to the next line if they don't fit */
+    text-align: left !important;
+}
+.instructor {
+    width: 300px; /* Adjust the width as needed */
+    margin-bottom: 20px; /* Add some space between instructors */
 }
 
 @keyframes fade {
